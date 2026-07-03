@@ -9,6 +9,8 @@ Jalankan lokal :  streamlit run app.py
 Deploy publik  :  push ke GitHub -> https://share.streamlit.io (main file: app.py)
 Deploy AWS     :  lihat README (App Runner / EC2).
 """
+import os
+import gdown
 import pandas as pd
 import streamlit as st
 
