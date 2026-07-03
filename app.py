@@ -47,11 +47,7 @@ PRESETS = {
                  beh="Low_spent_Small_value_payments", bal=370.61, ltypes=4),
 }
 
-# ============================
-# Download model dari Google Drive
-# ============================
-
-FILE_ID = "MASUKKAN_FILE_ID_GOOGLE_DRIVE"
+FILE_ID = "1Rux-_lV9VXWB28DWo3mkRUtHPE9y-8ek"
 
 if not os.path.exists("model.pkl"):
     gdown.download(
@@ -59,6 +55,7 @@ if not os.path.exists("model.pkl"):
         "model.pkl",
         quiet=False
     )
+
   
 @st.cache_resource
 def load_model():
