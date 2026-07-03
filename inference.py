@@ -1,13 +1,3 @@
-"""
-inference.py
-------------
-Kode inferencing untuk model klasifikasi credit score (Poor / Standard / Good).
-Memuat model.pkl (berisi pipeline lengkap: cleaning + preprocessing + estimator,
-serta label encoder) lalu memprediksi untuk data MENTAH — kolom kotor otomatis
-dibersihkan oleh pipeline.
-
-Dipakai oleh app.py (Streamlit) dan untuk pengujian test case (blok __main__).
-"""
 from __future__ import annotations
 
 import json
