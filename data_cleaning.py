@@ -1,16 +1,3 @@
-"""
-data_cleaning.py
-----------------
-Pembersihan dataset 'Credit Score Classification' yang terkenal kotor:
-- kolom numerik tersimpan sebagai teks dengan karakter sampah ('_', '__..__')
-- placeholder tak valid ('_______', '_', '!@9#%8', 'NM', 'nan')
-- outlier ekstrem (mis. Age = 8466, Num_Bank_Accounts = ribuan)
-- 'Credit_History_Age' berformat 'X Years and Y Months'
-
-Disediakan sebagai sklearn Transformer (RawDataCleaner) agar pembersihan menjadi
-BAGIAN dari pipeline model -> sehingga inference pada data mentah pun otomatis
-dibersihkan dengan cara yang sama (tidak ada train/serve skew).
-"""
 from __future__ import annotations
 
 import re
