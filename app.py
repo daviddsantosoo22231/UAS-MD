@@ -1,14 +1,3 @@
-"""
-app.py
-------
-Aplikasi web deployment (Streamlit) untuk model klasifikasi credit score
-(Poor / Standard / Good). Menampilkan form input data nasabah, lalu memberi
-prediksi kelas beserta probabilitas tiap kelas.
-
-Jalankan lokal :  streamlit run app.py
-Deploy publik  :  push ke GitHub -> https://share.streamlit.io (main file: app.py)
-Deploy AWS     :  lihat README (App Runner / EC2).
-"""
 import os
 import gdown
 import pandas as pd
