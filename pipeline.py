@@ -1,22 +1,3 @@
-"""
-pipeline.py
------------
-Pipeline training machine learning BERBASIS OOP untuk klasifikasi credit score
-(3 kelas: Poor / Standard / Good), dengan pencatatan eksperimen MLflow.
-
-Alur setiap model = RawDataCleaner -> Preprocessing -> Estimator (satu Pipeline),
-sehingga model .pkl bisa langsung menerima data MENTAH saat inference.
-
-Struktur class (syarat: minimal preprocessing, training, evaluation):
-    - DataLoader        : memuat data & memisahkan train/test
-    - DataPreprocessor  : membangun transformer preprocessing (imputasi/scaling/encoding)
-    - ModelTrainer      : melatih pipeline (cleaner + preprocessor + estimator)
-    - ModelEvaluator    : menghitung metrik evaluasi (multi-class)
-    - TrainingPipeline  : orkestrator; beberapa model, logging MLflow, pilih & simpan terbaik
-
-Jalankan:  python pipeline.py
-Lihat MLflow:  mlflow ui   (http://127.0.0.1:5000)
-"""
 from __future__ import annotations
 
 import json
