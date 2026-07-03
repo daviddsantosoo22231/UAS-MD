@@ -47,7 +47,19 @@ PRESETS = {
                  beh="Low_spent_Small_value_payments", bal=370.61, ltypes=4),
 }
 
+# ============================
+# Download model dari Google Drive
+# ============================
 
+FILE_ID = "MASUKKAN_FILE_ID_GOOGLE_DRIVE"
+
+if not os.path.exists("model.pkl"):
+    gdown.download(
+        f"https://drive.google.com/uc?id={FILE_ID}",
+        "model.pkl",
+        quiet=False
+    )
+  
 @st.cache_resource
 def load_model():
     return CreditScoreModel("model.pkl")
